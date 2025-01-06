@@ -7,7 +7,7 @@ export default enhancedMiddleware;
 
 export const config = {
   matcher: [
-    '/protected/(.*)',
-    '/api/protected/(.*)',
+    // Always run for API routes
+    '/(api|trpc)(.*)',
   ],
 };
